@@ -1,0 +1,40 @@
+body{
+    background-color: lightseagreen;
+}
+
+.row{
+    justify-content: center;
+}
+
+#parteInferior{
+    margin: 0;
+    padding: 0;
+}
+
+#tecladoNumerico{
+    background-color: rgb(95, 50, 23);
+    border:solid 1px black;
+}
+
+#pantalla{
+    background-color: rgb(255, 255, 255);
+    border:solid 1px black;
+}
+
+#tecladoDerecha{
+    width:30%;
+    background-color: lightseagreen;
+    border:solid 1px black;
+}
+
+.num{
+    width:32.4%;
+    height:80px;
+    display:inline;
+}
+
+.secundario{
+    width:100%;
+    height:53px;
+    display:inline;
+}

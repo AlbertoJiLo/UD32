@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio calculadora bootstrap</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="codigo.js"></script>
+</head>
+
+<body class="bg-info">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-sm-4 mt-3 p-0 border border-secondary calculadora">
+                <div id="pantalla">
+                    <p class="my-0 text-end fs-4 p-2" id="textoSuperior">0</p>
+                </div>
+                <div id="parteInferior" class="d-flex">
+                    <div id="tecladoNumerico">
+                        <input type="button" class="btn num text-white" value="7" onclick="numero('7')">
+                        <input type="button" class="btn num text-white" value="8" onclick="numero('8')">
+                        <input type="button" class="btn num text-white" value="9" onclick="numero('9')">
+                        <input type="button" class="btn num text-white" value="4" onclick="numero('4')">
+                        <input type="button" class="btn num text-white" value="5" onclick="numero('5')">
+                        <input type="button" class="btn num text-white" value="6" onclick="numero('6')">
+                        <input type="button" class="btn num text-white" value="1" onclick="numero('1')">
+                        <input type="button" class="btn num text-white" value="2" onclick="numero('2')">
+                        <input type="button" class="btn num text-white" value="3" onclick="numero('3')">
+                        <input type="button" class="btn num text-white" value="." onclick="numero('.')">
+                        <input type="button" class="btn num text-white" value="0" onclick="numero('0')">
+                        <input type="button" class="btn num text-white" value="00" onclick="borradoCompleto()">
+                    </div>
+                    <div id="tecladoDerecha">
+                        <input type="button" class="btn secundario text-white" value="Retr" onclick="retroceso()">
+                        <input type="button" class="btn secundario text-white" value="/" onclick="operacion('/')">
+                        <input type="button" class="btn secundario text-white" value="x" onclick="operacion('*')">
+                        <input type="button" class="btn secundario text-white" value="-" onclick="operacion('-')">
+                        <input type="button" class="btn secundario text-white" value="+" onclick="operacion('+')">
+                        <input type="button" class="btn secundario text-white" value="=" onclick="resolver()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Con noscript avisaremos al usuario que necesita Javascript-->
+    <noscript>
+        <p>Esta página requiere tener Javascript instalado para que funcione</p>
+    </noscript>
+</body>
+</html>
